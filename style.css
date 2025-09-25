@@ -325,7 +325,7 @@ p {
     border-radius: 1rem;
     width: 30rem;
     transition: all 0.1s;
-    transform: rotate(5deg);
+    /* transform: rotate(5deg); */
 }
 
 .about-content:hover {
@@ -414,7 +414,7 @@ p {
     padding-bottom: 3rem;
     border-radius: 2rem;
     box-shadow: 8px 3px 5px 1px rgb(0, 0, 0, 0.2);
-    transform: rotate(-5deg);
+    /* transform: rotate(-5deg); */
 }
 
 .card-img {
@@ -512,7 +512,7 @@ em {
     padding: 0rem 4rem;
     margin-top: -4rem;
     justify-content: center;
-    transform: rotate(2deg);
+    transform: rotate(deg);
 }
 
 .four-cards {
