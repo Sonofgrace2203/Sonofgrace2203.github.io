@@ -7,6 +7,20 @@
         <link rel="stylesheet" href="LivingThing.Core.Frameworks.Client.css">
         <link rel="stylesheet" href="mdi/css/materialdesignicons.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+        <script>
+            const menuIcon = document.getElementById('menu-icon');
+            const sideNav = document.getElementById('side-nav');
+            const cancelIcon = document.getElementById('cancel-icon');
+
+            cancelIcon.addEventListener('click', => {
+                sidenav.classList.toggle('hide');
+            });
+        
+            menuIcon.addEventListener('click', () => {
+                sideNav.classList.toggle('show');
+            });
+        </script>
     </head>
     <body>
         <div>
@@ -30,7 +44,7 @@
                         <i class="mdi mdi-cart"></i>
                     </button>
                 </span>
-                <div class="mobile-menu">
+                <button id="menu-icon" class="mobile-menu">
                         <i class="mdi mdi-menu"></i>
                 </button>
             </header>
@@ -354,5 +368,54 @@
         <a href="#Home"><div class="go-home">
             <i class="mdi mdi-arrow-up"></i>
         </div></a>
+
+        <div id="side-nav" class="d-hide">
+            <div class="mobile-nav">
+                <button id="cancel-icon" class="mobile-menu-nav">
+                    <i class="mdi mdi-cancel"></i>
+                </button>
+                <nav id="mobile-nav">
+                    <div class="mobile-nav-list">
+                        <a href="home.html" class="mobile-list">Home</a>
+                        <a href="home.html" class="mobile-list">About</a>
+                        <a href="home.html" class="mobile-list">Work with me!</a>
+                        <a href="home.html" class="mobile-list">Book</a>
+                        <a href="home.html" class="mobile-list">Contact</a>
+                    </div>
+                </nav>
+                
+                    <button class="mobile-menu-nav">
+                        <i class="mdi mdi-select-search"></i>
+                    </button>
+                    <button class="mobile-menu-nav">
+                        <i class="mdi mdi-cart"></i>
+                    </button>
+                
+                <div class="mobile-nav-icon">
+                    <a href="facebook.com"><i class="mdi mdi-facebook"></i></a>
+                    <a href="facebook.com"><i class="mdi mdi-twitter"></i></a>
+                    <a href="facebook.com"><i class="mdi mdi-discord"></i></a>
+                    <a href="facebook.com"><i class="mdi mdi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var menuIcon = document.getElementById("menu-icon");
+            var sideNav = document.getElementById("side-nav");
+
+            function showNav(){
+                sideNav.classList.remove("d-hide");
+            }
+
+            menuIcon.addEventListener("click", showNav);
+
+            var cancelIcon = document.getElementById("cancel-icon")
+
+            function hideNav(){
+                sideNav.classList.add("d-hide")
+            }
+            cancelIcon.addEventListener("click", hideNav)
+        </script>
     </body>
 </html>

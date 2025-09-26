@@ -1003,43 +1003,8 @@ textarea {
 }
 /* section six ends header */
 
-
-.go-home {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(78, 16, 78);
-    font-size: 3rem;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 3px 2px 2px rgb(0, 0, 0, 0.3);
-}
-
-.go-home:hover {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: rgb(78, 16, 78);
-    font-size: 3rem;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 3px 2px 2px rgb(0, 0, 0, 0.3);
-}
-
-/* .homepage {
-    width: fit-content;
-} */
 /* main ends here */
+
 
 /* footer starts here */
 footer {
@@ -1088,3 +1053,96 @@ em {
 }
 
 /* footer ends here */
+
+
+
+
+/* extras starts here */
+
+.go-home {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(78, 16, 78);
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+.go-home:hover {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: rgb(78, 16, 78);
+    font-size: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+/* monile nav design */
+
+/* #side-nav {
+    visibility: hidden;
+} */
+
+.mobile-nav {
+    position: fixed;
+    top: 0rem;
+    height: 100vh;
+    width: 30rem;
+    background-color: white;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: -1px 1px 2px 4px rgb(0, 0, 0, 0.1);
+    transition: left 0.5s;
+}
+
+#mobile-nav {
+    display: block;
+    font-size: 2.5rem;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: rem;
+    gap: 2rem;
+}
+
+.mobile-list {
+    margin: 0rem 0rem;
+    padding: 1rem 2rem;
+    border-bottom: 5px solid rgba(80, 2, 80, 0.9);
+    background-color: rgba(80, 2, 80, 0.2);
+    border-radius: 1rem;
+}
+
+.mobile-nav-icon {
+    position: absolute;
+    bottom: 5rem;
+    font-size: 3rem
+}
+
+.mobile-menu-nav {
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    box-shadow: -1px 4px 5px 1px rgb(0, 0, 0, 0.1);
+    display: block;
+/* extras ends here */
